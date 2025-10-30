@@ -1,0 +1,11 @@
+gcp_dbt_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: gcp-batch-sim
+      dataset: Employee_Details_cur
+      location: US
+      threads: 4
+      keyfile: D:\gcp-batch-sim-ee8f8c387993.json

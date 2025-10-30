@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: Employee_Details_stg
+    schema: Employee_Details_stg
+    tables:
+      - name: Employee_stg
+      - name: Department_stg
+models:
+  - name: employeedepartment
+    description: "Curated employee-department relationship table"
+    columns:
+      - name: employee_id
+        description: "Unique identifier for employee"
+        tests:
+          - not_null
+      - name: department_id
+        description: "Department assigned to employee"
+        tests:
+          - not_null
+      - name: row_start_date
+        description: "Start of validity window"
+        tests:
+          - not_null
+      - name: row_end_date
+        description: "End of validity window"
+        tests:
+          - not_null

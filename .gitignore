@@ -1,0 +1,39 @@
+# DBT build artifacts
+target/
+dbt_modules/
+dbt_packages/
+
+# DBT logs
+logs/
+dbt.log
+
+# DBT docs
+manifest.json
+catalog.json
+run_results.json
+
+# Python environment junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.env
+.venv/
+venv/
+.envrc
+
+# IDE/editor junk
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# OS-specific
+Thumbs.db
+desktop.ini
+
+# Service account keys (optional, if not meant to be committed)
+*.json

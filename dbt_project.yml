@@ -1,0 +1,17 @@
+name: gcp_de_data_pipeline_dbt
+version: '1.0'
+config-version: 2
+
+profile: gcp_dbt_profile
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  gcp_de_data_pipeline_dbt:
+    curated:
+      +materialized: table
