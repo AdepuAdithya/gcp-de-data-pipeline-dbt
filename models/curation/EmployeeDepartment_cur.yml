@@ -7,7 +7,7 @@ sources:
       - name: Employee_stg
       - name: Department_stg
 models:
-  - name: employeedepartment
+  - name: EmployeeDepartment_cur
     description: "Curated employee-department relationship table"
     columns:
       - name: employee_id

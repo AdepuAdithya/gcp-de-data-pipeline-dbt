@@ -4,8 +4,8 @@ gcp_dbt_profile:
     dev:
       type: bigquery
       method: service-account
-      project: gcp-batch-sim
+      project: famous-athlete-476816-f8
       dataset: Employee_Details_cur
-      location: US
+      location: us-central1
       threads: 4
-      keyfile: D:\gcp-batch-sim-ee8f8c387993.json
+      keyfile: D:\famous-athlete-476816-f8-bf592dcd7ea0.json
