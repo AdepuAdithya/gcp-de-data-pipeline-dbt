@@ -12,6 +12,5 @@ macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
 models:
-  gcp_de_data_pipeline_dbt:
-    curated:
+    curation:
       +materialized: table

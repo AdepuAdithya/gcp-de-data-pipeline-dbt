@@ -1,11 +1,11 @@
 gcp_dbt_profile:
-  target: dev
+  target: prod
   outputs:
-    dev:
+    prod:
       type: bigquery
       method: service-account
       project: famous-athlete-476816-f8
       dataset: Employee_Details_cur
       location: us-central1
       threads: 4
-      keyfile: D:\famous-athlete-476816-f8-bf592dcd7ea0.json
+      keyfile: /home/airflow/gcs/data/dbt/keys/famous-athlete-476816-f8-bf592dcd7ea0.json
